@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+section .contenedor{
+    grid-area: section;
+}
+section .galeria{
+    grid-area: section2;
+}
+footer{
+    grid-area: footer;
+    height: 80px;
+}
+
+
+.container__grid{
+    display: grid;
+    grid-template-columns: repeat (1fr 1fr 1fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "section section section"
+    "section2 section2 section2"
+    "footer footer footer";
+
+}
+
+
+/* mobile */
+@media (max-width: 480px) {
+    header{
+        height: 150px;
+    }
+    main{
+        height: 700px;
+    }
+    section .contenedor{
+        height: 300px;
+    }
+    section .galeria{
+        height: 700px;
+    }
+    footer{
+        height: 100px;
+    }
+
+    .container__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "section2"
+        "footer";
+    
+    }
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 800px) {
+    header{
+        height: 150px;
+    }
+    main{
+        height: 700px;
+    }
+    section .contenedor{
+        height: 300px;
+    }
+    section .galeria{
+        height: 700px;
+    }
+    footer{
+        height: 100px;
+    }
+
+    .container__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "section2"
+        "footer";
+    
+    }
+}
+
+/* notebook */
+@media (min-width: 801px) and (max-width: 1400px) {
+    header{
+        height: 150px;
+    }
+    main{
+        height: 700px;
+    }
+    section .contenedor{
+        height: 300px;
+    }
+    section .galeria{
+        height: 700px;
+    }
+    footer{
+        height: 100px;
+    }
+    .container__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "section2"
+        "footer";
+    
+    }
+}
+
+/* escritorio */
+@media (min-width: 1401px) {
+    header{
+        height: 150px;
+    }
+    main{
+        height: 700px;
+    }
+    section .contenedor{
+        height: 100px;
+    }
+    section .galeria{
+        height: 100px;
+    }
+    footer{
+        height: 100px;
+    }
+    .container__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "section2"
+        "footer";
+    
+    }
+}
