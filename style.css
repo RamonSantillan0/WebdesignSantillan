@@ -7,7 +7,7 @@
     --bg: #1e2345;
     --violet: rgb(161, 132, 240);
     --pink: #d60087;
-    --torquoise: #2fdabd;
+    --turquoise: #2fdabd;
 }
 
 a {
@@ -163,44 +163,4 @@ footer p {
 
 .condiciones p{
     padding: 0 20rem;
-}
-
-.gradiente {
-    background-image: linear-gradient(45deg, var(--violet), var(--torquoise));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.galeria .animacion {
-    position: relative;
-    color: #252839;
-    -webkit-text-stroke: 0.3vw rgb(245, 245, 245);
-    text-transform: uppercase;
-}
-.galeria .animacion::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    content: attr(data-text);
-    color: #0d9b59;
-    -webkit-text-stroke: 0vw rgb(245, 245, 245);
-    border-right: 2px solid #0d9b59;
-    overflow: hidden;
-    animation: animate 6s linear infinite;
-
-}
-@keyframes animate {
-    0%,10%,100%
-    {
-        width: 0;
-    }
-    70%,90%
-    {
-        width: 100%;
-    }
 }
